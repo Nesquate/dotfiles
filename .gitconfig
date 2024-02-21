@@ -1,0 +1,6 @@
+[user]
+	email = nesquate@gmail.com
+	name = Nesquate
+	signingkey = DC1F031E39219429
+[commit]
+	gpgsign = true
