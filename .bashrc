@@ -28,6 +28,10 @@ export PS1="\[\e[4;30;43m\](\D{%Y/%m/%d} \t)\[\e[m\] \[\e[0;36m\]\u\[\e[m\] in \
 
 #-----------------------------
 
+# GPG
+## Fix sign commit problem
+export GPG_TTY=$(tty)
+
 # Load asdf
 
 . /opt/asdf-vm/asdf.sh
