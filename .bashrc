@@ -4,9 +4,14 @@
 ## https://wiki.archlinux.org/title/Dotfiles
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
-### Fix dotfiles command doesn't have completions.
+# Completion
+# Hugo
+source "$HOME/.bash-completion/hugo.bash"
+
+## Fix dotfiles command doesn't have completions.
 source /usr/share/bash-completion/completions/git
 __git_complete dotfiles __git_main
+
 
 #----------------------------
 
