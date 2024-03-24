@@ -44,5 +44,11 @@ if [ -f /opt/asdf-vm/asdf.sh ]; then
      export CHROME_EXECUTABLE=$(which google-chrome-stable)
 fi
 
+# Add Android Platform Tools to path
+if [ -d /opt/android-sdk/platform-tools ]; then
+     export PATH="/opt/android-sdk/platform-tools:${PATH}"
+fi
+
+
 # Load user local bin folder
 # export PATH="/home/nesquate/.local/bin:${PATH}"
