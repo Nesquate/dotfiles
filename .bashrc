@@ -34,7 +34,7 @@ export GPG_TTY=$(tty)
 
 if [ -f /opt/asdf-vm/asdf.sh ]; then
      . /opt/asdf-vm/asdf.sh
-     export PATH="${PATH}:/home/nesquate/.asdf/shims:/opt/asdf-vm/bin"
+#      export PATH="/home/nesquate/.asdf/shims:/opt/asdf-vm/bin:${PATH}"
 
      # Import Hugo bash completion after loading asdf-vm
      source "$HOME/.bash-completion/hugo.bash"
@@ -45,4 +45,4 @@ if [ -f /opt/asdf-vm/asdf.sh ]; then
 fi
 
 # Load user local bin folder
-export PATH="${PATH}:/home/nesquate/.local/bin"
+# export PATH="/home/nesquate/.local/bin:${PATH}"
