@@ -1,15 +1,17 @@
 # Nesquate's Dotfiles
 Self use, but you can also use that if you want.
 
-## Requirement
+## Requirements
 - Arch Linux, or other distro base on Arch (e.g. EndeavourOS)
 - `bash-completion` is installed
+- OpenSSH with SSH key installed
+- GPG with GPG key installed
+
+## Optionals
 - asdf-vm via AUR helper (e.g. yay)
 - Flutter via asdf-vm
 - Hugo via asdf-vm
 - Android Studio via Jetbrains Toolbox (via AUR helper)
-- OpenSSH with SSH key installed
-- GPG with GPG key installed
 
 ## Restore to other computer
 
