@@ -5,8 +5,6 @@
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 
 # Completion
-# Hugo
-source "$HOME/.bash-completion/hugo.bash"
 
 ## Fix dotfiles command doesn't have completions.
 source /usr/share/bash-completion/completions/git
@@ -34,9 +32,17 @@ export GPG_TTY=$(tty)
 
 # Load asdf
 
-. /opt/asdf-vm/asdf.sh
-export PATH=/home/nesquate/.local/bin:/home/nesquate/.asdf/shims:/opt/asdf-vm/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+if [ -f /opt/asdf-vm/asdf.sh ]; then
+     . /opt/asdf-vm/asdf.sh
+     export PATH="${PATH}:/home/nesquate/.asdf/shims:/opt/asdf-vm/bin"
 
-# Flutter
-export FLUTTER_ROOT="$(asdf where flutter)"
-export CHROME_EXECUTABLE=$(which google-chrome-stable)
+     # Import Hugo bash completion after loading asdf-vm
+     source "$HOME/.bash-completion/hugo.bash"
+
+     # Load Flutter after loading asdf-vm
+     export FLUTTER_ROOT="$(asdf where flutter)"
+     export CHROME_EXECUTABLE=$(which google-chrome-stable)
+fi
+
+# Load user local bin folder
+export PATH="${PATH}:/home/nesquate/.local/bin"
