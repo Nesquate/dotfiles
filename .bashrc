@@ -42,6 +42,9 @@ if [ -f /opt/asdf-vm/asdf.sh ]; then
      # Load Flutter after loading asdf-vm
      export FLUTTER_ROOT="$(asdf where flutter)"
      export CHROME_EXECUTABLE=$(which google-chrome-stable)
+
+     # Load Dotnet after loading asdf-vm
+     export DOTNET_ROOT="$(asdf where dotnet)"
 fi
 
 # Add Android Platform Tools to path
