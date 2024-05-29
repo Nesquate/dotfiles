@@ -54,4 +54,4 @@ fi
 
 
 # Load user local bin folder
-# export PATH="/home/nesquate/.local/bin:${PATH}"
+export PATH="/home/nesquate/bin:${PATH}"
