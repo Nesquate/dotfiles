@@ -55,3 +55,7 @@ fi
 
 # Load user local bin folder
 export PATH="/home/nesquate/bin:${PATH}"
+
+# Load mc-image-helper
+
+export PATH="/home/nesquate/bin/mc-image-helper/bin:${PATH}"
