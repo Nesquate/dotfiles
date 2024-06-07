@@ -123,3 +123,12 @@ __git_complete dotfiles __git_main
 export PATH="/home/nesquate/bin:${PATH}"
 ## Load mc-image-helper
 export PATH="/home/nesquate/bin/mc-image-helper/bin:${PATH}"
+
+## Load asdf
+# Load user local bin folder
+export PATH="/home/nesquate/bin:${PATH}"
+
+# Load mc-image-helper
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
