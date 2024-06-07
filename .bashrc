@@ -129,6 +129,12 @@ export PATH="/home/nesquate/bin/mc-image-helper/bin:${PATH}"
 export PATH="/home/nesquate/bin:${PATH}"
 
 # Load mc-image-helper
-. "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
+export PATH="/home/nesquate/bin/mc-image-helper/bin:${PATH}"
 
+# Setup asdf & packwiz
+if [ -f $HOME/.asdf/asdf.sh ]; then
+	. "$HOME/.asdf/asdf.sh"
+	. "$HOME/.asdf/completions/asdf.bash"
+	
+	source "$HOME/.bash-completion/packwiz.bash"
+fi
