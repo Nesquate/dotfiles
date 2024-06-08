@@ -138,3 +138,7 @@ if [ -f $HOME/.asdf/asdf.sh ]; then
 	
 	source "$HOME/.bash-completion/packwiz.bash"
 fi
+
+
+## Fix Debian is not including sbin in PATH
+PATH="$PATH:/usr/sbin:/sbin"
