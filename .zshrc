@@ -136,11 +136,6 @@ unset key
 # }}} End configuration added by Zim install
 
 # Created by newuser for 5.9
-alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-alias vim='nvim'
-
-# Fixing GPG problem
-export GPG_TTY=$(tty)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

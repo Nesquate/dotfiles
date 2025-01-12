@@ -54,5 +54,5 @@ zmodule zsh-users/zsh-history-substring-search
 zmodule zsh-users/zsh-autosuggestions
 # }}} End configuration added by Zim install
 
-# Powerlevel10k
+# Powerlevle 10k
 zmodule romkatv/powerlevel10k --use degit
