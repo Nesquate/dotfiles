@@ -57,11 +57,8 @@ zmodule zsh-users/zsh-autosuggestions
 # Powerlevle 10k
 zmodule romkatv/powerlevel10k --use degit
 
-# asdf
-zmodule zimfw/asdf
-
 # Completion - last load
 zmodule completion
 
 # Packwiz
-zmodule /home/nesquate/zim-local-modules/packwiz-completion
+zmodule /home/nesquate/zim-stuff/local-modules/packwiz-completion
