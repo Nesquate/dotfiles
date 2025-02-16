@@ -152,3 +152,6 @@ export GPG_TTY=$TTY
 # Yarn bin
 export PATH="$PATH:$HOME/.yarn/bin"
 
+# Packwiz
+source <(packwiz completion zsh); compdef _packwiz packwiz
+

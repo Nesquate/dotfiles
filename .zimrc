@@ -59,6 +59,3 @@ zmodule romkatv/powerlevel10k --use degit
 
 # Completion - last load
 zmodule completion
-
-# Packwiz
-zmodule /home/nesquate/zim-stuff/local-modules/packwiz-completion
